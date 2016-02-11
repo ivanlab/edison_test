@@ -4,6 +4,7 @@ var mraa = require ('mraa');
 var restify = require ('restify');
 
 // Create http Server
+//
 
 var server = restify.createServer();
 
@@ -13,6 +14,7 @@ server.use(restify.bodyParser());
 //set the route with callback function method GET and POST
 server.get('/gpio/:id', getValue);
 server.post('/gpio/:id', setvalue);
+
 
 
 function getValue(req, res, next)
