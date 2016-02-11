@@ -15,7 +15,6 @@ server.get('/gpio/:id', getValue);
 server.post('/gpio/:id', setvalue);
 
 
-
 function getValue(req, res, next)
 {
 // check if all parameters are present
