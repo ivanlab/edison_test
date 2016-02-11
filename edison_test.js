@@ -4,7 +4,6 @@ var mraa = require ('mraa');
 var restify = require ('restify');
 
 // Create http Server
-//
 
 var server = restify.createServer();
 
